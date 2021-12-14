@@ -12,8 +12,24 @@ body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1630px;
+  outline: 2px solid tomato;
+}
+
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .logo {
@@ -63,13 +79,19 @@ ul {
 
 /* Hero */
 
-.hero-title {
-  background-color: #2f303a;
+.hero {
+  outline: solid tomato;
   color: var(--background-color);
+  text-align: center;
+  background-color: #2f303a;
+}
+
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 40px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -80,23 +102,30 @@ ul {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
+  padding: 10px 32px;
+  min-width: 200px;
 }
 /* Section */
 
+.section {
+  outline: solid tomato;
+}
 .section-title {
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 94px;
 }
 
 /* Чем мы занимаемся*/
 .feature-list .title {
+  margin-top: 0;
+  margin-bottom: 10px;
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -104,6 +133,8 @@ ul {
   text-transform: uppercase;
 }
 .feature-list .text {
+  margin-top: 0;
+  margin-bottom: 94px;
   color: var(--secondary-text-color);
   font-size: 14px;
   line-height: 1.71;
@@ -199,4 +230,6 @@ footer {
 button {
   font-family: inherit;
   cursor: pointer;
+  padding: ;
+  border: 1px solid transparent;
 }
