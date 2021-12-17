@@ -18,7 +18,6 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
 }
 
 ul {
@@ -44,7 +43,7 @@ img {
 }
 .logo {
   color: #000000;
-  font-family: Raleway, sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
@@ -64,6 +63,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border: 1px rgba(236, 236, 236, 1);
 }
 .site-nav {
   display: flex;
@@ -130,7 +130,6 @@ img {
 /* Hero */
 
 .hero {
-  outline: solid tomato;
   color: var(--background-color);
   text-align: center;
   background-color: #2f303a;
@@ -148,7 +147,7 @@ img {
 .button-primary {
   background-color: var(--accent-color);
   color: var(--background-color);
-  font-family: Roboto;
+  font-family: 'Roboto', sans serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -164,9 +163,9 @@ img {
 /* Section */
 
 .section {
-  outline: solid tomato;
   padding-top: 94px;
   padding-bottom: 94px;
+  border: 1px tomato;
 }
 
 .features-title,
@@ -195,7 +194,6 @@ img {
 .features-item {
   margin-right: 30px;
   width: 270px;
-  /* height: 101px; */
 }
 .features-item:last-child {
   margin-right: 0;
@@ -211,7 +209,6 @@ img {
 }
 .features-list .text {
   margin-top: 0;
-  margin-bottom: 94px;
   color: var(--secondary-text-color);
   font-size: 14px;
   line-height: 1.71;
@@ -225,7 +222,7 @@ img {
 }
 .work-item {
   margin-right: 30px;
-  flex-basis: calc(100% / 3- 30px);
+  flex-basis: calc(100% / 3 - 30px);
 }
 
 .work-item:last-child {
@@ -240,7 +237,6 @@ img {
 .team-item {
   margin-right: 30px;
   width: 270px;
-  height: 368px;
   background-color: var(--background-color);
 }
 .team-item:last-child {
@@ -297,6 +293,10 @@ img {
 }
 /* СТИЛИ ДЛЯ Portfolio.html */
 
+.projects-lists {
+  display: flex;
+  justify-content: center;
+}
 .projects-lists .button-current {
   margin-bottom: 34px;
   color: var(--primary-text-color);
@@ -315,6 +315,7 @@ img {
   background-color: #2196f3;
 }
 .projects-lists .button {
+  margin-right: 8px;
   margin-bottom: 34px;
   background-color: #f5f4fa;
   color: var(--primary-text-color);
@@ -327,23 +328,30 @@ img {
 .projects-cards {
   display: flex;
   flex-wrap: wrap;
-  background-color: teal;
+  margin: -15px;
 }
 
-.projects-item:nth-child(3n) {
+.projects-item {
+  width: 370px;
+  margin: 15px;
+}
+/* ИЛИ МОЖНО СДЕЛАТЬ ТАК */
+/* 1. у каждого третьего ребенка убрать маржин справа */
+/* .projects-item:nth-child(3n) {
   margin-right: 0;
 }
+/* 2. у троих нижних детей убрать маржин нижний */
+/* /* .projects-item:nth-last-child(-n + 3) {
+  margin-bottom: 0; */
 
-.projects-item:nth-last-child(-n + 3) {
-  margin-bottom: 0;
-}
-.projects-item {
-  /* width: 370px; */
-  width: calc((100%-60px) / 3);
+/* 3. распределить пространство независимо от размера конт.
+ на 3 детей за минусом двух маржинов между ними */
+/* .projects-item {
+  width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
-  background-color: coral;
-}
+} */
+
 .projects-cards .link {
   text-decoration: none;
 }
