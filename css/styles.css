@@ -15,7 +15,7 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
   outline: 2px solid tomato;
@@ -156,6 +156,10 @@ img {
   letter-spacing: 0.06em;
   padding: 10px 32px;
   min-width: 200px;
+}
+.button-primary:hover,
+.button-primary:focus {
+  background-color: #188ce8;
 }
 /* Section */
 
@@ -334,7 +338,8 @@ img {
   margin-bottom: 0;
 }
 .projects-item {
-  width: 370px;
+  /* width: 370px; */
+  width: calc((100%-60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
   background-color: coral;
